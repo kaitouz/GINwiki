@@ -1,3 +1,63 @@
-theme: jekyll-theme-minimal
-title: GIN's homepage
-description: aaaa
+title: My Personal Knowledge Base
+description: A collection of my knowledge on various topics.
+baseurl: "/GINwiki" # the subpath of your site, e.g. /blog
+url: "https://kaitouz.github.io" # the base hostname & protocol for your site
+theme: minima
+
+# Build settings
+markdown: kramdown
+
+# Navigation
+collections:
+  deep-learning:
+    output: true
+  programming:
+    output: true
+  operator-system:
+    output: true
+  tools:
+    output: true
+  docker:
+    output: true
+  k8s:
+    output: true
+  personal-finance:
+    output: true
+
+# Include the navigation data file
+defaults:
+  - scope:
+      path: ""
+      type: "deep-learning"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "programming"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "operator-system"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "docker"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "k8s"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "personal-finance"
+    values:
+      layout: "default"
